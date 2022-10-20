@@ -1,0 +1,367 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+button {
+  border: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  margin-top: 27px;
+  margin-left: 16px;
+}
+.header__menu {
+  display: flex;
+  gap: 30px;
+  margin-top: 43px;
+}
+.header__menu-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #001e64;
+}
+.header__menu-item:hover {
+  border-bottom: 1px solid #001e64;
+}
+.header__phone {
+  margin-top: 38px;
+}
+.header__content {
+  background-image: url(../images/header-bgi.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -110px;
+  padding-bottom: 80px;
+}
+.header__title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 95px;
+  color: #001e64;
+  max-width: 589px;
+  padding-top: 212px;
+  padding-left: 112px;
+  margin-bottom: 130px;
+}
+.header__slider {
+  max-width: 522px;
+  padding-left: 112px;
+  padding-top: 57px;
+  padding-bottom: 135px;
+}
+.header__slider-text {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+.slick-prev,
+.slick-next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  left: 40px;
+}
+.slick-prev {
+  top: 0;
+}
+.slick-next {
+  bottom: 0;
+}
+.slick-dots {
+  list-style: none;
+  position: absolute;
+  left: 35px;
+  top: 58px;
+  bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slick-dots button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28px;
+  opacity: 0.5;
+  color: #fff;
+  cursor: pointer;
+}
+.slick-active button {
+  opacity: 1;
+}
+.slick-dots button::before {
+  content: "0";
+}
+.header__btn {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 23px;
+  line-height: 32px;
+  padding: 14px 88px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-left: 112px;
+  display: inline-block;
+  transform: translateY(-100px);
+}
+.header__box {
+  display: flex;
+  margin-left: 100%;
+  margin-right: 30px;
+}
+.header__content-link--active {
+  font-weight: 700;
+}
+.header__box span {
+  color: #fff;
+}
+.header__content-link {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+.description {
+  margin: 100px 0;
+}
+.description__row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 180px;
+}
+.description__title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #001e64;
+  padding-bottom: 30px;
+}
+.description__title--mod {
+  min-width: 491px;
+}
+.description__text {
+  color: #232222;
+  max-width: 420px;
+}
+.description__text + .description__text {
+  padding-top: 30px;
+}
+.description__text--mod {
+  margin-bottom: 50px;
+}
+.description__img--one {
+  max-height: 505px;
+}
+.description__img--two {
+  max-height: 203px;
+}
+.description__row--one {
+  margin-bottom: 50px;
+}
+.description__row--two {
+  margin-bottom: 50px;
+}
+.product {
+  margin-top: 100px;
+}
+.product__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.product__name {
+  width: 510px;
+  text-align: center;
+  padding-top: 41px;
+}
+.product-prev,
+.product-next {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.product-prev {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.product-next{
+	padding-top: 41px;
+}
+.product__name-item {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232222;
+  cursor: pointer;
+}
+.product__name-item.slick-current {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #001E64;
+}
+.product__name-item + .product__name-item {
+  margin-top: 30px;
+}
+.product__content {
+  width: 600px;
+}
+.product__content-box {
+  display: flex;
+  gap: 48px;
+}
+.product__content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.product__content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product__content-item span {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #001e64;
+}
+.product__content-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #001e64;
+  margin-bottom: 20px;
+}
+.product__content-text {
+  max-width: 598px;
+}
+.product__content-btn {
+  padding: 12px 85px;
+  border: 1px solid #001e64;
+  border-radius: 20px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #001e64;
+  margin-top: 26px;
+}
+.advertising {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.advertising__text {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232222;
+  max-width: 696px;
+}
+.contact__inner {
+  display: flex;
+  justify-content: flex-start;
+}
+.contact__box-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #001e64;
+  max-width: 195px;
+}
+.contact__box-mail {
+  font-size: 18px;
+  line-height: 21px;
+  color: #232222;
+  max-width: 156px;
+}
+.contact__box-tel {
+  font-size: 18px;
+  line-height: 21px;
+  color: #232222;
+}
+.contact__box-advice {
+  font-size: 18px;
+  line-height: 21px;
+  color: #232222;
+  max-width: 337px;
+}
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+}
+.footer {
+  padding: 29px 0 108px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__menu {
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #232222;
+}
+.footer__logo {
+  padding-bottom: 45px;
+}
